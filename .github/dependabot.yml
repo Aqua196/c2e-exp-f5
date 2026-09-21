@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/sentinel"
+    schedule:
+      interval: "yearly"
+  - package-ecosystem: "npm"
+    directory: "/paused"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 0
